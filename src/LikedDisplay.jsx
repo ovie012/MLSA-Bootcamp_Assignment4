@@ -6,7 +6,7 @@ import MusicDisplay from './MusicDisplay';
 
 function LikedDisplay({ movieTitle, musicName, artistName, nickName, onFormSubmit }) {
   
-  const apiKey = '856407e37c9776632d1deffc07ae5426'
+  const apiKey = 'dceb29f450a1e078c07e11f908e3aeb8'
   const MOVIE_URL = `http://www.omdbapi.com?apikey=4e09530&s=${encodeURIComponent(movieTitle)}`;
   const MUSIC_URL = `https://ws.audioscrobbler.com/2.0/?method=track.search&track=${encodeURIComponent(musicName)}&artist=${encodeURIComponent(artistName)}&api_key=${apiKey}&format=json&limit=5`;
 
@@ -73,3 +73,7 @@ export default LikedDisplay;
 
   // music api key = '856407e37c9776632d1deffc07ae5426
   // shared-Secret = '3501a68d63dad57b6673ff107e0c981b'
+
+
+  //second secret key = 'ef4b469561fcdeeca57689e84bec321f'
+  //second apiKey = 'dceb29f450a1e078c07e11f908e3aeb8'
