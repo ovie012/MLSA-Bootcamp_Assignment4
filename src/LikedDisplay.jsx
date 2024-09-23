@@ -7,7 +7,7 @@ import MusicDisplay from './MusicDisplay';
 function LikedDisplay({ movieTitle, musicName, artistName, nickName, onFormSubmit }) {
   
   const apiKey = 'dceb29f450a1e078c07e11f908e3aeb8'
-  const MOVIE_URL = `http://www.omdbapi.com?apikey=4e09530&s=${encodeURIComponent(movieTitle)}`;
+  const MOVIE_URL = `https://www.omdbapi.com?apikey=4e09530&s=${encodeURIComponent(movieTitle)}`;
   const MUSIC_URL = `https://ws.audioscrobbler.com/2.0/?method=track.search&track=${encodeURIComponent(musicName)}&artist=${encodeURIComponent(artistName)}&api_key=${apiKey}&format=json&limit=5`;
 
   const { data : movie, error : movieError, loading : movieLoading } = useFetch(MOVIE_URL);
