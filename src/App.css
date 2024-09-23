@@ -205,6 +205,14 @@ button:hover {
   margin-bottom: 20px;
 }
 
+.liked-display p {
+  color: #f9d3b4;
+  text-align: center;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 500px) {
   .form-page,
   .liked-display {
